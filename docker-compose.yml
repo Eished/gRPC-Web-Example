@@ -1,0 +1,9 @@
+version: '3'
+services:
+  envoy:
+    image: grpcweb/envoy:latest
+    ports:
+      - 8080:8080  # 将 Envoy 的 8080 端口映射到主机的 8080 端口
+    volumes:
+      - ./envoy.yaml:/etc/envoy/envoy.yaml  # 将本地的 envoy.yaml 配置文件挂载到容器的 /etc/envoy/envoy.yaml 路径
+    command: ["envoy", "-c", "/etc/envoy/envoy.yaml"]  # 使用自定义的配置文件来启动 Envoy
