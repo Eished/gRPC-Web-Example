@@ -1,4 +1,4 @@
-## Build and Run an Echo example
+## Run an gRPC-Web Echo example
 
 This page will show you how to quickly build and run an end-to-end Echo
 example. The example has 3 key components:
@@ -37,7 +37,8 @@ npm run start
 
 Visit http://localhost:8088/
 
-## What's next?
 
-For more details about how you can run your own gRPC service and access it
-from the browser, please see this [tutorial](tutorial.md)
+
+## Original project
+
+https://github.com/grpc/grpc-web/tree/master/net/grpc/gateway/examples/echo
